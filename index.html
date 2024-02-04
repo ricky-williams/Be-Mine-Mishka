@@ -44,7 +44,7 @@
 
             <div class="col-3 ">
               <div class="site-logo">
-                    <a href="index.html"><strong>AUTISM</strong><br>S & A <span class="text-primary"></span> </a>
+                    <a href="index.html"><strong>R + M</strong><span class="text-primary"></span> </a>
               </div> 
             </div>
 
@@ -53,18 +53,6 @@
 
               <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
 
-              
-
-              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="about us.html" class="nav-link">About Us</a></li>
-                  <li ><a href="General information.html" class="nav-link">General information</a></li>
-                   <li><a href="Specialist and support.html" class="nav-link">Specialist And Support</a></li>
-                  <li><a href="Stay involved .html" class="nav-link">Stay involved</a></li>
-                   <li ><a href="References.html" class="nav-link">References</a></li>
-                </ul>
-              </nav>
             </div>
 
             
@@ -79,46 +67,40 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">
-                <h1>Autism support and awareness</h1>
+                <h1>Will you be my valentine?</h1>
                 <br>
-              <h3 style ="color: white">Scroll down for
-                  information on the website</h3>
+              <button id="yesButton" onclick="showPopup()">Yes</button>
+              <button id="noButton" onclick="runAround()">No</button>
+            
             </div>
           </div>
         </div>
       </div>
     </div>
-    
 
-    
-    <div class="site-section">
-      <div class="container">
-        <div class="row">
- 
-            <h2 class="line-bottom">PURPOSE OF THIS SITE.</h2>
-            <p style = "color: black"> 
-              The purpose of this website is to increase awareness of autism, and to 
-              provide support to parents whose child has been diagnosed with autism or who
-              suspect that their child might have autism. 
-            </p>
-            <br>
-            <p style = "color: black">This website provides an overview of what autism is, symptoms, and how
-               it is diagnosed. The website also provides contact details for therapists,
-               specialists, and support groups in South Africa. This website also allows
-               interested parties to subscribe to a regular newsletter regarding the cause.
-            </p>
-        </div>
-      </div>
-    </div>
+       <script>
+      function showPopup() {
+        alert("Yay! 💖");
+      }
 
-    
+      function runAround() {
+        var button = document.getElementById("noButton");
+        var angle = 0;
+        var interval = setInterval(function () {
+          angle += 5;
+          button.style.transform = "rotate(" + angle + "deg)";
+        }, 50);
 
- 
+        setTimeout(function () {
+          clearInterval(interval);
+        }, 2000);
+      }
+    </script>
+      
      <div class="footer-dark">
         <footer>
             <div class="container">
-                <h3 style="color: red">Autism S & A</h3>
-                <h3 style="color:white">Author: @Ricky Williams, 20111583</h3>
+                <h3 style="color:white">R + M</h3>
             </div>
         </footer>
 
